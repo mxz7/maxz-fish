@@ -51,5 +51,5 @@ function fish_prompt
   #   end
   # end
 
-  echo -n -s $host $yellow (prompt_pwd) $prompt_color '$' $normal ' '
+  echo -n -s $host $yellow (prompt_pwd) $prompt_color $prompt_char $normal ' '
 end
