@@ -33,6 +33,8 @@ function fish_prompt
   # adds user@hostname if on ssh connection
   if test -n "$SSH_CONNECTION"
     set host "$cyan$USER$normal@$blue$hostname_short "
+  else
+    set host "$cyan$USER"
   end
 
   if test $last_status = 0
